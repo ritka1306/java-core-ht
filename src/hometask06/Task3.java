@@ -7,7 +7,7 @@ public class Task3 {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите строку целиком");
         String s = in.nextLine();
-        String[] strings = s.split(" - |, ");
+        String[] strings = s.split("-|,");
         System.out.println(strings[0] + ":");
         for (int i = 1; i < strings.length; i++) {
             System.out.println("-" + strings[i]);

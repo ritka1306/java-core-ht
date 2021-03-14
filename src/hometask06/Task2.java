@@ -10,7 +10,7 @@ public class Task2 {
         String s = in.nextLine();
         String[] strings = s.split(" ");
         for (String str : strings) {
-            if (str.matches("^[a-h]\\w*"))
+            if (str.matches("^[a-h, A-H]\\w*"))
                 System.out.println(str);
         }
     }

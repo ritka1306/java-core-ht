@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class Developer extends Employee {
 
-    String mainLanguage;
-    String[] Skills;
+    private String mainLanguage;
+    private String[] skills;
 
 
     public String getMainLanguage() {
@@ -13,22 +13,22 @@ public class Developer extends Employee {
     }
 
     public String[] getSkills() {
-        return Skills;
+        return skills;
     }
 
     public Developer(String name, String email, int experience, String mainLanguage, String[] skills) {
         super(name, email, experience);
         this.mainLanguage = mainLanguage;
-        Skills = skills;
+        this.skills = skills;
     }
 
     @Override
     public String toString() {
         return "Developer: " +
-                "mainLanguage - " + mainLanguage +
-                "; Skills " + Arrays.toString(Skills) +
-                "; name - " + name +
-                "; email: " + email +
-                "; Experience - " + Experience + " years";
+                "mainLanguage - " + getMainLanguage() +
+                "; Skills " + Arrays.toString(getSkills()) +
+                "; name - " + getName() +
+                "; email: " + getEmail() +
+                "; Experience - " + getExperience() + " years";
     }
 }

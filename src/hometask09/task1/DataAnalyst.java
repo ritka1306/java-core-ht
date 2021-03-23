@@ -3,13 +3,13 @@ package hometask09.task1;
 import java.util.Arrays;
 
 public class DataAnalyst extends Employee {
-    boolean phd;
-    String[] Methods;
+    private boolean phd;
+    String[] methods;
 
     public DataAnalyst(String name, String email, int experience, boolean phd, String[] methods) {
         super(name, email, experience);
         this.phd = phd;
-        Methods = methods;
+        this.methods = methods;
     }
 
     public boolean isPhd() {
@@ -17,16 +17,17 @@ public class DataAnalyst extends Employee {
     }
 
     public String[] getMethods() {
-        return Methods;
+        return methods;
     }
+
 
     @Override
     public String toString() {
         return "DataAnalyst: " +
-                "phd is " + phd +
-                "; Methods " + Arrays.toString(Methods) +
-                "; name - " + name +
-                "; email:" + email +
-                "; Experience - " + Experience + " years";
+                "phd is " + isPhd() +
+                "; Methods " + Arrays.toString(getMethods()) +
+                "; name - " + getName() +
+                "; email:" + getEmail() +
+                "; Experience - " + getExperience() + " years";
     }
 }

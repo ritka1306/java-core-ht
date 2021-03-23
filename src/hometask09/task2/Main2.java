@@ -1,6 +1,6 @@
 package hometask09.task2;
 
-public class main2 {
+public class Main2 {
     public static void main(String[] args) {
 
         Cat simba = new Cat();

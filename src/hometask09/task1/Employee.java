@@ -1,15 +1,15 @@
 package hometask09.task1;
 
 public class Employee {
-    String name;
-    String email;
-    int Experience;
+    private String name;
+    private String email;
+    private int experience;
 
 
     public Employee(String name, String email, int experience) {
         this.name = name;
         this.email = email;
-        Experience = experience;
+        this.experience = experience;
     }
 
     public String getName() {
@@ -21,14 +21,14 @@ public class Employee {
     }
 
     public int getExperience() {
-        return Experience;
+        return experience;
     }
 
     @Override
     public String toString() {
         return "Employee: " +
-                "name - " + name +
-                "; email: " + email +
-                "; Experienc - " + Experience + " years";
+                "name - " + getName() +
+                "; email: " + getEmail() +
+                "; Experienc - " + getExperience() + " years";
     }
 }

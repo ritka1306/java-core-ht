@@ -1,4 +1,4 @@
-package hometask10;
+package hometask10.task1;
 
 /* Нужно создать множество строк (Set<String>) и занести в него 20 слов на букву «Л»*/
 
